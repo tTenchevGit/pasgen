@@ -111,6 +111,14 @@ footer {
 
 .password-field-container {
     position: relative;
+    
+}
+.password-field-container input {
+    /* width: 80%; */
+    padding-right: 30px; /* Space for the copy symbol */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .copy-symbol {
@@ -125,7 +133,7 @@ footer {
 }
 
 .copy-symbol:hover {
-    color: #45a049;
+    color: aqua;
 }
 
 
