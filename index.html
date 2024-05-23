@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <td><label for="password">Generated Password:</label></td>
+                        <td><input type="text" id="password" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><label for="length">Password Length:</label></td>
+                        <td><input type="number" id="length" min="1" value="12"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="button-container">
+                            <button id="generateBtn">Generate Password</button>
+                            <button id="copyBtn">Copy Password</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Password Generator. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
