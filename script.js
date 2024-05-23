@@ -4,13 +4,19 @@ document.getElementById('generateBtn').addEventListener('click', function() {
     document.getElementById('password').value = password;
 });
 
-document.getElementById('copyBtn').addEventListener('click', function() {
+document.getElementById('copyBtn').addEventListener('click', copyPasswordToClipboard);
+
+document.getElementById('password').addEventListener('click', copyPasswordToClipboard);
+
+document.querySelector('.copy-symbol').addEventListener('click', copyPasswordToClipboard);
+
+function copyPasswordToClipboard() {
     const passwordField = document.getElementById('password');
     passwordField.select();
     passwordField.setSelectionRange(0, 99999); // For mobile devices
     document.execCommand('copy');
     alert('Password copied to clipboard');
-});
+}
 
 function generatePassword(length) {
     const upperCaseLetters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
