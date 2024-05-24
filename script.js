@@ -27,7 +27,7 @@ function generatePassword(length) {
 
     let password = '';
 
-    // Ensure at least one of each required character type
+
     password += upperCaseLetters[Math.floor(Math.random() * upperCaseLetters.length)];
     password += lowerCaseLetters[Math.floor(Math.random() * lowerCaseLetters.length)];
     password += numbers[Math.floor(Math.random() * numbers.length)];
