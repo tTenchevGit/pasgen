@@ -39,7 +39,7 @@ function generatePassword(length) {
         password += allCharacters[randomIndex];
     }
 
-    // Shuffle the password to ensure randomness
+   
     password = password.split('').sort(() => 0.5 - Math.random()).join('');
 
     return password;
