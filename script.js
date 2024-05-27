@@ -33,7 +33,7 @@ function generatePassword(length) {
     password += numbers[Math.floor(Math.random() * numbers.length)];
     password += symbols[Math.floor(Math.random() * symbols.length)];
 
-    // Fill the remaining length of the password
+    
     for (let i = password.length; i < length; i++) {
         const randomIndex = Math.floor(Math.random() * allCharacters.length);
         password += allCharacters[randomIndex];
